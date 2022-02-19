@@ -1,0 +1,184 @@
+SIMPLE  =                    T / Standard FITS format                           BITPIX  =                    8 / Character data                                 NAXIS   =                    1 / Text string                                    NAXIS1  =                 5472 / Number of characters                           VOTMETA =                    T / Table metadata in VOTable format               EXTEND  =                    T / There are standard extensions                  COMMENT                                                                         COMMENT The data in this primary HDU consists of bytes which                    COMMENT comprise a VOTABLE document.                                            COMMENT The VOTable describes the metadata of the table contained               COMMENT in the following BINTABLE extension.                                    COMMENT Such a BINTABLE extension can be used on its own as a perfectly         COMMENT good table, but the information from this HDU may provide some          COMMENT useful additional metadata.                                             COMMENT There is one following BINTABLE.                                        NTABLE  =                    1 / Number of following BINTABLE HDUs              END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <?xml version='1.0' encoding='UTF-8'?>
+<VOTABLE version='1.1'>
+<!--
+ !  VOTable written by uk.ac.starlink.votable.FitsPlusTableWriter
+ !  Describes BINTABLE extensions in following HDUs
+ !-->
+<RESOURCE>
+<TABLE name="J/ApJ/723/251/table2" nrows="101">
+<DESCRIPTION>
+LRIS (membership test sample) redshift results
+</DESCRIPTION>
+<PARAM arraysize="22" datatype="char" name="Warning" value="No center provided++++"/>
+<PARAM arraysize="19" datatype="char" name="votable-version" value="1.99+ (14-Oct-2013)"/>
+<PARAM arraysize="15" datatype="char" name="-ref" value="VIZ5894a9bbb167"/>
+<PARAM arraysize="9" datatype="char" name="-out.max" value="unlimited"/>
+<PARAM arraysize="2" datatype="char" name="queryParameters" value="33">
+<DESCRIPTION>-oc.form=dec
+-out.max=unlimited
+-out.add=_r
+-out.add=_RAJ,_DEJ
+-sort=_r
+-nav=cat:J/ApJ/723/251&amp;tab:{J/ApJ/723/251/table2}&amp;key:source=J/ApJ/723/251&amp;HTTPPRM:&amp;-out.max=50&amp;-out.form=HTML Table&amp;-out.add=_r&amp;-out.add=_RAJ,_DEJ&amp;-sort=_r&amp;-oc.form=sexa&amp;
+-c.eq=J2000
+-c.r=  2
+-c.u=arcmin
+-c.geom=r
+-source=J/ApJ/723/251/table2
+-order=I
+-out=S
+-out=ID
+-out=f_ID
+-out=PT
+-out=PF
+-out=Rmag
+-out=f_Rmag
+-out=F814W
+-out=B-V
+-out=f_B-V
+-out=g-I
+-out=mue
+-out=RAJ2000
+-out=DEJ2000
+-out=czA
+-out=e_czA
+-out=S/N
+-out=MType
+-out=A06
+-out=Simbad
+Simbad=Simbad</DESCRIPTION>
+</PARAM>
+<FIELD datatype="double" name="_RAJ2000" precision="5" ref="J2000" ucd="pos.eq.ra" unit="deg" width="9">
+<DESCRIPTION>Right ascension (FK5, Equinox=J2000.0) (computed by VizieR, not part of the original data)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="_DEJ2000" precision="5" ref="J2000" ucd="pos.eq.dec" unit="deg" width="9">
+<DESCRIPTION>Declination (FK5, Equinox=J2000.0) (computed by VizieR, not part of the original data)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="2" datatype="char" name="S" ucd="meta.code.member">
+<DESCRIPTION>Status (Mm, Bg, Un, PM, or PB) (1)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="int" name="ID" ucd="meta.id;meta.main" width="7">
+<DESCRIPTION>[10162/4042826] Identification number</DESCRIPTION>
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD arraysize="1" datatype="char" name="f_ID" ucd="meta.code">
+<DESCRIPTION>[he] Note on the observation (2)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="unsignedByte" name="PT" ucd="stat.probability;obs.image" width="1">
+<DESCRIPTION>? [1/5] Membership probability defined by N.T. on HST/ACS image (3) [NULL integer written as an empty string]</DESCRIPTION>
+<VALUES null='255'/>
+</FIELD>
+<FIELD datatype="unsignedByte" name="PF" ucd="meta.code.member" width="1">
+<DESCRIPTION>? [1/4] Membership probability defined by H.F. on HST/ACS image (3) [NULL integer written as an empty string]</DESCRIPTION>
+<VALUES null='255'/>
+</FIELD>
+<FIELD datatype="float" name="Rmag" precision="2" ucd="phot.mag;em.opt.R" unit="mag" width="5">
+<DESCRIPTION>[18.68/23.41]? R-band magnitude (4)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="1" datatype="char" name="f_Rmag" ucd="meta.code">
+<DESCRIPTION>[f] Blended photometry (2)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="F814W" precision="2" ucd="phot.mag;em.opt.I" unit="mag" width="5">
+<DESCRIPTION>? HST/ACS F814W magnitude (5)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="B-V" precision="2" ucd="phot.color;em.opt.B;em.opt.V" unit="mag" width="5">
+<DESCRIPTION>? (B-V) color index (3" aperture) (4)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="1" datatype="char" name="f_B-V" ucd="meta.code">
+<DESCRIPTION>[f] Blended photometry (2)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="g-I" precision="2" ucd="phot.color;em.opt.V;em.opt.I" unit="mag" width="5">
+<DESCRIPTION>? (F475W-F814W) color index (2.25" aperture)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="mue" precision="2" ucd="phot.mag.sb" unit="mag/arcsec2" width="5">
+<DESCRIPTION>? Mean effective surface brightness (&lt;{mu}_e,F814W_&gt;)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="11" datatype="char" name="RAJ2000" ref="J2000" ucd="pos.eq.ra;meta.main" unit="&quot;h:m:s&quot;">
+<DESCRIPTION>[12/13] Hour of right ascension (J2000)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="12" datatype="char" name="DEJ2000" ref="J2000" ucd="pos.eq.dec;meta.main" unit="&quot;d:m:s&quot;">
+<DESCRIPTION>[27/28] Degree of declination (J2000)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="int" name="czA" ucd="phys.veloc;pos.heliocentric" unit="km/s" width="6">
+<DESCRIPTION>? Absorption redshift [NULL integer written as an empty string]</DESCRIPTION>
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD datatype="short" name="e_czA" ucd="stat.error" unit="km/s" width="3">
+<DESCRIPTION>? czA uncertainty (6) [NULL integer written as an empty string]</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="S/N" precision="1" ucd="stat.snr" width="4">
+<DESCRIPTION>[3.7/61.1]? Signal to noise ratio per Angstrom around 5000{AA}</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="3" datatype="char" name="MType" ucd="src.morph.type">
+<DESCRIPTION>Morphological type</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="A06" ucd="meta.ref.url" width="3">
+<DESCRIPTION>Cross-match with Adami et al., 2006, Cat. J/A+A/451/1159, within 1.5" [NULL integer written as an empty string]</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD arraysize="6" datatype="char" name="Simbad" ucd="meta.ref">
+<DESCRIPTION>ask the {\bf\fg{FireBrick}Simbad} data-base about this object</DESCRIPTION>
+</FIELD>
+<!-- Dummy VOTable - no DATA element -->
+</TABLE>
+</RESOURCE>
+</VOTABLE>                                                                                                                                                                                                                                                                                                XTENSION= 'BINTABLE'           / binary table extension                         BITPIX  =                    8 / 8-bit bytes                                    NAXIS   =                    2 / 2-dimensional table                            NAXIS1  =                   91 / width of table in bytes                        NAXIS2  =                  101 / number of rows in table                        PCOUNT  =                    0 / size of special data area                      GCOUNT  =                    1 / one data group                                 TFIELDS =                   22 / number of columns                              EXTNAME = 'J/ApJ/723/251/table2' / table name                                   TTYPE1  = '_RAJ2000'           / label for column 1                             TFORM1  = 'D       '           / format for column 1                            TUNIT1  = 'deg     '           / units for column 1                             TUCD1   = 'pos.eq.ra'                                                           TTYPE2  = '_DEJ2000'           / label for column 2                             TFORM2  = 'D       '           / format for column 2                            TUNIT2  = 'deg     '           / units for column 2                             TUCD2   = 'pos.eq.dec'                                                          TTYPE3  = 'S       '           / label for column 3                             TFORM3  = '2A      '           / format for column 3                            TCOMM3  = 'Status (Mm, Bg, Un, PM, or PB) (1)'                                  TUCD3   = 'meta.code.member'                                                    TTYPE4  = 'ID      '           / label for column 4                             TFORM4  = 'J       '           / format for column 4                            TCOMM4  = '[10162/4042826] Identification number'                               TUCD4   = 'meta.id;meta.main'                                                   TTYPE5  = 'f_ID    '           / label for column 5                             TFORM5  = 'A       '           / format for column 5                            TCOMM5  = '[he] Note on the observation (2)'                                    TUCD5   = 'meta.code'                                                           TTYPE6  = 'PT      '           / label for column 6                             TFORM6  = 'B       '           / format for column 6                            TNULL6  =                  255 / blank value for column 6                       TUCD6   = 'stat.probability;obs.image'                                          TTYPE7  = 'PF      '           / label for column 7                             TFORM7  = 'B       '           / format for column 7                            TNULL7  =                  255 / blank value for column 7                       TUCD7   = 'meta.code.member'                                                    TTYPE8  = 'Rmag    '           / label for column 8                             TFORM8  = 'E       '           / format for column 8                            TUNIT8  = 'mag     '           / units for column 8                             TCOMM8  = '[18.68/23.41]? R-band magnitude (4)'                                 TUCD8   = 'phot.mag;em.opt.R'                                                   TTYPE9  = 'f_Rmag  '           / label for column 9                             TFORM9  = 'A       '           / format for column 9                            TCOMM9  = '[f] Blended photometry (2)'                                          TUCD9   = 'meta.code'                                                           TTYPE10 = 'F814W   '           / label for column 10                            TFORM10 = 'E       '           / format for column 10                           TUNIT10 = 'mag     '           / units for column 10                            TCOMM10 = '? HST/ACS F814W magnitude (5)'                                       TUCD10  = 'phot.mag;em.opt.I'                                                   TTYPE11 = 'B-V     '           / label for column 11                            TFORM11 = 'E       '           / format for column 11                           TUNIT11 = 'mag     '           / units for column 11                            TCOMM11 = '? (B-V) color index (3" aperture) (4)'                               TUCD11  = 'phot.color;em.opt.B;em.opt.V'                                        TTYPE12 = 'f_B-V   '           / label for column 12                            TFORM12 = 'A       '           / format for column 12                           TCOMM12 = '[f] Blended photometry (2)'                                          TUCD12  = 'meta.code'                                                           TTYPE13 = 'g-I     '           / label for column 13                            TFORM13 = 'E       '           / format for column 13                           TUNIT13 = 'mag     '           / units for column 13                            TCOMM13 = '? (F475W-F814W) color index (2.25" aperture)'                        TUCD13  = 'phot.color;em.opt.V;em.opt.I'                                        TTYPE14 = 'mue     '           / label for column 14                            TFORM14 = 'E       '           / format for column 14                           TUNIT14 = 'mag/arcsec2'        / units for column 14                            TCOMM14 = '? Mean effective surface brightness (<{mu}_e,F814W_>)'               TUCD14  = 'phot.mag.sb'                                                         TTYPE15 = 'RAJ2000 '           / label for column 15                            TFORM15 = '11A     '           / format for column 15                           TUNIT15 = '"h:m:s" '           / units for column 15                            TCOMM15 = '[12/13] Hour of right ascension (J2000)'                             TUCD15  = 'pos.eq.ra;meta.main'                                                 TTYPE16 = 'DEJ2000 '           / label for column 16                            TFORM16 = '12A     '           / format for column 16                           TUNIT16 = '"d:m:s" '           / units for column 16                            TCOMM16 = '[27/28] Degree of declination (J2000)'                               TUCD16  = 'pos.eq.dec;meta.main'                                                TTYPE17 = 'czA     '           / label for column 17                            TFORM17 = 'J       '           / format for column 17                           TUNIT17 = 'km/s    '           / units for column 17                            TNULL17 =          -2147483648 / blank value for column 17                      TCOMM17 = '? Absorption redshift [NULL integer written as an empty string]'     TUCD17  = 'phys.veloc;pos.heliocentric'                                         TTYPE18 = 'e_czA   '           / label for column 18                            TFORM18 = 'I       '           / format for column 18                           TUNIT18 = 'km/s    '           / units for column 18                            TNULL18 =               -32768 / blank value for column 18                      TCOMM18 = '? czA uncertainty (6) [NULL integer written as an empty string]'     TUCD18  = 'stat.error'                                                          TTYPE19 = 'S/N     '           / label for column 19                            TFORM19 = 'E       '           / format for column 19                           TCOMM19 = '[3.7/61.1]? Signal to noise ratio per Angstrom around 5000{AA}'      TUCD19  = 'stat.snr'                                                            TTYPE20 = 'MType   '           / label for column 20                            TFORM20 = '3A      '           / format for column 20                           TCOMM20 = 'Morphological type'                                                  TUCD20  = 'src.morph.type'                                                      TTYPE21 = 'A06     '           / label for column 21                            TFORM21 = 'I       '           / format for column 21                           TNULL21 =               -32768 / blank value for column 21                      TUCD21  = 'meta.ref.url'                                                        TTYPE22 = 'Simbad  '           / label for column 22                            TFORM22 = '6A      '           / format for column 22                           TCOMM22 = 'ask the {\bf\fg{FireBrick}Simbad} data-base about this object'       TUCD22  = 'meta.ref'                                                            DATE-HDU= '2017-02-03T16:12:17' / Date of HDU creation (UTC)                    STILVERS= '3.1-2   '           / Version of STIL software                       STILCLAS= 'uk.ac.starlink.votable.FitsPlusTableWriter' / Author class in STIL soEND                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @h[x‘˝Û∂@<ç:ÊÖ€Mm 7 A¨£◊ A≠ôö?=p§ ?Çè\Aºı√12 59 26.04+28 01 04.00  n Ç@…ôöImV Simbad@h\X%[@<
+∑˛Æ˚Mm 	v ¿   AìÆ¿   ?ê£◊AÆ∏R12 59 30.83+28 02 30.73  ï MB2ffE    Simbad@h\;wFà@;ˆ†YûÿMm ÈM AÆQÏ A¨£◊?:·H ?YôöAæè\12 59 31.73+27 57 48.17  "ú J@†  dE  Simbad@h\îpdÏÍ@;˛—·√ÙMm Í¡ Aü◊
+ A°
+=?Bè\ ?c◊
+AπÎÖ12 59 34.35+27 59 43.41  i =AtÃÕdE  Simbad@h\≤ÄÒ,(@;˚
+ëSy˚Mm Ó˛ A≤   A≤  ?#◊
+ ?\(ˆAøGÆ12 59 35.23+27 58 50.28  ª n@ê  dE  Simbad@h]”õg@;ÚÚQ¡ì¥Mm ¯Ω A≠◊
+ AÆ·H?8QÏ ?u¬èA∫=q12 59 38.08+27 56 56.45   O@„33dE  Simbad@h]&A≥(∑@;ÛK€†•Mm ⁄%eA™·H A∞ÃÕ?E∏ ?Bè\A∂ı√12 59 38.62+27 56 58.64  > /@£33dE  Simbad@h]¢∆i}@<‡ﬁ“àŒMm ﬂw A°\) A°Ö?kÖ ?≥33AúQÏ12 59 42.27+28 00 54.53  ˛ MB"ÃÕE   Simbad@h]πMîâ@;ˇó$tSèMm ˚≤ ¿   Aû(ˆ¿   ?xQÏAπ
+=12 59 42.93+27 59 54.23  !1 SA4ÃÕdE   Simbad@h]€ ñëß@;˜õ]:Mm  n A®ff A®ÃÕ?&ff ?fffAºz·12 59 43.94+27 58 01.95  ˆ ^@∆ffdE  Simbad@h]ﬁ?ª◊≤@;ÂÛÄMm ” A¨QÏ A∞z·?∏R ?xQÏAæQÏ12 59 44.01+27 56 15.32  î U@¨ÃÕdE  Simbad@h]ˆjUp@;˜Ú‰éärMm øT  Aü\) A†QÏ?∏R ?áÆAª3312 59 44.72+27 58 06.77  &é JA&ffdE  Simbad@h^È$Ú'–@;ıı…∞Mm «W A§QÏ A¶ff?=p§ ?ä=qA∑ÎÖ12 59 51.83+27 57 26.25  H JAFffdE  Simbad@h^ı…Ø‚@;ˇ	ï™˜êMm =∞JeA§QÏ A•p§?333 ?kÖAºff12 59 52.18+27 59 46.48  !¡ t@†  dE  Simbad@h_˛Ô^»@;˝:í£Mm Œ& A†è\ A°Ö?#◊
+ ?\(ˆA≥GÆ12 59 59.97+27 59 17.88  #G OA≥33S0  Simbad@habM“Ò™@;&…Mm ≥  A¢·H A£
+=?Bè\ ?ÜffA≠∏13 00 10.38+27 56 17.08  = <A”33E   Simbad@haò5ãÇ@<GÆz·Mm  y AÆ£◊ A∞z·?Æ ?0£◊Aºè\13 00 11.96+28 04 03.01  ¿ P@ˆffdE  Simbad@haÕtíy@<	íd2ãMm åW ¿   A¶£◊¿   ?ä=qAºÃÕ13 00 13.52+28 02 14.60  œ AAôödE   Simbad@haÂ^≥@<‡`˛GôMm é/ A¨è\ AØGÆ?5¬è ?aGÆAæ(ˆ13 00 14.21+28 00 26.38  ’ U@¨ÃÕdE  Simbad@hbÎØ#@<ç˜§Á´Mm éJ A¢·H A§∏R?GÆ ?É◊
+Aæı√13 00 15.70+28 01 46.24  I \@¶ffdE  Simbad@hb.r⁄0@;Ï=F≤k¯Mm Ñ÷ Aúff Aû=q?(ı√ ?fffAπ¬è13 00 16.36+27 55 22.11  9 BA  dE  Simbad@hb9XbN@;Ò±1e”ôMm Ö	 Aóôö Aú(ˆ?Bè\ ?kÖA∫è\13 00 16.68+27 56 38.81  ˆ NAffdE  Simbad@hbo?R¸&@;¯∂0©8Mm rÔ A®ÃÕ A´\)?+Ö ?c◊
+AΩ◊
+13 00 18.26+27 58 17.51  V O@©ôödE  Simbad@hbthá®÷@;Î›óˆ+kMm Ü! A†QÏ A£
+=?(ı√ ?kÖA∫·H13 00 18.41+27 55 16.85  € JA0  dS0 Simbad@hbìtºj@<¶L/É{Mm  ~ö AÆè\ A≠Ö?(ˆ ?Ä  Aº£◊13 00 19.32+28 04 22.27  µ c@–  dE  Simbad@hb° ¿É@;¸§“≤¿Mm sø A™QÏ A´∏?#◊
+ ?\(ˆA¡p§13 00 19.74+27 59 04.88  { á@∂ffdE  Simbad@hb¥9Xb@<ÿò≤ÈÕMm  ~Ì A£Ö A§=q?333 ?s33Aπ
+=13 00 20.28+28 04 53.15  ¿ EAH  dE  Simbad@hbÌÂKH‘@<	◊4.€∂Mm `J A°Æ A£ÎÖ?@   ?}p§AΩ3313 00 21.97+28 02 18.39  s ?@ñffdE  Simbad@hcf•Pá@;Î¡i¬;yMm â‰ AõÎÖ Aú=q?=p§ ?Ä  Aπ∏13 00 22.95+27 55 15.30  ñ EAlÃÕdE  Simbad@hcìtºj@;ˇ6&,∫sMm w: A®ı√ A¨z·?5¬è ?u¬èA¡
+=13 00 23.22+27 59 48.92  ± K@ì33dE  Simbad@hc!~|@<ÒÄ
+|[Mm `ﬂ AöQÏ Aú=q?E∏ ?s33A∑
+=13 00 23.47+28 03 02.00  § ;A‰  dE  Simbad@hcP3:~@;˝J°!Mm y@ Aû   Aü∏?5¬è ?kÖA∏£◊13 00 24.85+27 59 21.90  $ AAúÃÕdE  Simbad@hcVˇ¡ﬂ@;Ò¢∆i}Mm ä Aü◊
+ A°33?E∏ ?Ö∏A∑◊
+13 00 25.05+27 56 38.00  " WAP  dE  Simbad@hcëhr∞!@;ˇä∞»äHMm z¥ A¢∏R A§QÏ?5¬è ?É◊
+AπGÆ13 00 26.76+27 59 53.57   CA	ôödE  Simbad@hc•;éKà@<]çy–¶Mm eó Aò=q Aó◊
+?}p§ ?∞£◊A†ff13 00 27.34+28 00 33.26   3B-ôöE   Simbad@hcˆr2M@;˜Ú‰éärMm }® ¿   A®  ¿   ?u¬èAªp§13 00 29.71+27 58 06.79  d GA	ôödE   Simbad@hd ß≈¨G@<¬ŒFIêMm fƒ A¶z· A¶ı√?5¬è ?s33Aª◊
+13 00 30.02+28 01 35.08  º KA!ôödE  Simbad@hd≥˙m@<¥Ã%!Mm fh  A§=q A¢∏R?.{ ?kÖAæz·13 00 30.93+28 03 12.76  „ AA(  dE  Simbad@hd<»Û@<—¢£YMm g¸ A•¬è A©ôö?J=q ?^∏RA¿∏R13 00 31.76+28 01 21.84  ª V@‡  dE  Simbad@hdTüîÖ^@;˘Œ_o“Mm Jy AñQÏ Aô
+=?=p§ ?}p§A∫z·13 00 32.48+27 58 32.87   Û jA&ffdE  Simbad@hdíd2ã@;¯∏'˙Mm L A¢è\ A£p§?:·H ?Ä  A∏ÃÕ13 00 34.29+27 58 17.63  â IAs33dE  Simbad@hdÃxÈˆ©@;ÎwFà{Mm `+ Aû∏R AüGÆ?=p§ ?u¬èA∏£◊13 00 35.99+27 55 05.59  " ;A{33dE  Simbad@hdﬂ;dZ@<{âZ\Mm i˜   A®(ˆfAπ
+=>ÎÖføkÖA£
+=13 00 36.54+28 02 55.53Ä   Ä ¿      Simbad@hdﬂ;dZ@<{âZ\Mm i˜ ˇˇ¿   ¿  ¿   ¿  ¿  13 00 36.54+28 02 55.53Ä   Ä ¿      Simbad@he°Ù±Ó@;˙`‘V.
+Mm N hA´◊
+ A¨ÃÕ?5¬è ?u¬èA°∏13 00 37.84+27 58 40.94  * JAó33E   Simbad@he°Ù±Ó@;˙`‘V.
+Mm N hˇˇ¿   ¿  ¿   ¿  ¿  13 00 37.84+27 58 40.94  Ì ;A™ff    Simbad@he5ÁBôŸ@<Ü/YâﬂMm ; ¿   Aíff¿   ?
+=qAÆ∏R13 00 39.08+28 00 35.51  , LBlffSa   Simbad@he<»ﬁ*√@;ˆùsBÌªMm O A¢(ˆ A£ôö?&ff ?z·HAæè\13 00 39.28+27 57 48.01  « I@∂ffdE  Simbad@he?––gå@<‡`˛GôMm  '≤ A£ôö A¶  ?.{ ?n{Aæz·13 00 39.37+28 04 11.37  ¸ 7AÃÕdE  Simbad@he´`kz¢@<ö,fêXMm  )ê AóÆ Aòz·?LÃÕ ?è\)AÆè\13 00 42.52+28 03 25.33  π @BffE    Simbad@he‘™‡"@;˝6˜„—ÃMm P› A®   A™QÏ?=p§ ?hı√AΩÖ13 00 43.73+27 59 20.84  Ë P@˘ôödE  Simbad@he·GÆ{@<	°v›¨ÔMm =Ó Aïp§ AòÃÕ?@   ?Çè\Aπ
+=13 00 44.10+28 02 15.43  "π KA‹ÃÕdE  Simbad@hf`óÃ@<RT`™eMm  .b Aß◊
+ AÆ  ?0£◊ ?n{A¿{13 00 45.92+28 03 35.46  Ô O@∂ffdE  Simbad@hfVˇ¡ﬂ@;˘ó¢HîƒMm Iı A¶=q A¨  ?5¬è ?u¬èA∂z·13 00 47.55+27 58 29.91  º =AK33dE  Simbad@hfÕ»uO7@</◊^ GMm  / AØÆ AØ◊
+?∏R ?z·HAæÃÕ13 00 51.03+28 03 47.62   H@ÏÃÕdS0 Simbad@h[‰O†QD@<ÜÉ<`Bg l Aòff Aó¬è?¿   ?„◊
+AûQÏ12 59 29.19+28 01 31.76  ÷Ô eBtffE   Simbad@h\£/Dë*@<°7ÛåTBg ÷Á A∞{ A∞ff?J=q ?Tz·AΩp§12 59 34.78+28 02 01.36  ¬Ã ≥@ÈôödE  Simbad@h\ÛbbÀß@;˙ÕûÉ‰&Bg Òg Aü\) AùÎÖ?ê£◊ ?◊
+=Aù
+=12 59 37.13+27 58 46.93 ¡‰ WB33Sp  Simbad@h_Ú<…@;Û0j+Bg »y  A©Ö A®£◊>«Æ ?Ø\)A∏QÏ12 59 52.59+27 56 57.90Ä   Ä ¿      Simbad@ha3á	W@<∏‰∏{›Bg à¯ A±\) AÆè\?c◊
+ @◊
+A∂ff13 00 09.01+28 02 44.84Ä   Ä ¿  Sp  Simbad@haÿ¬§Tﬁ@<ËPBg é   AÆQÏ AØ33?:·H ?ö·HA∞(ˆ13 00 13.85+28 00 15.14Ä   Ä ¿      Simbad@ha‚¨2"í@;ÊC™yªÆBg Öî A´∏ A•◊
+@ÎÖ @Dz·A£◊
+13 00 14.14+27 53 58.08 ú ?¿  S0  Simbad@hb+©—ˆ@;ÒŒ_pBg ÑK Aö   AõGÆ?J=q ?Çè\A¥è\13 00 16.28+27 56 30.48  ¡– hAqôöSp  Simbad@hbX∏'˙@;¯˜Q’Bg tÍ ¿   A†=q¿   ?†  Aúff13 00 17.60+27 58 07.62  ˘§ WB0  E    Simbad@hbX∏'˙@;¯˜Q’Bg tÍ ˇˇ¿   ¿  ¿   ¿  ¿  13 00 17.60+27 58 07.62  ˘Â ZB"ff     Simbad@hb|Ìëhs@;¯Æ˚*Æ)Bg t  AªGÆ Aπôö¿   ?™=qAπÖ13 00 18.66+27 58 17.10Ä   Ä ¿      Simbad@hb[Täú@<AJM+,Bg  ~	   A¨è\ A¨QÏ?ÅGÆ ?ú(ˆA¥·H13 00 17.67+28 03 34.53 Aÿ XAff    Simbad@hb{‹0@;˘7ü©~Bg s_   A¥{ A∂(ˆ?333 ?aGÆA∂(ˆ13 00 18.63+27 58 22.73Ä   Ä ¿      Simbad@hbø€L¬P@<.]·\ßBg  Ô A¶   A¢ı√?Ö∏ @(QÏA¨ı√13 00 20.62+28 04 15.69 Ä G¿  Sp  Simbad@hc°Ù±Ó@;Î≈XdE$Bg Çp  ¿   ¿  ¿   ¿  ¿  13 00 22.84+27 55 15.52Ä   Ä ¿       Simbad@hcüjìÚë@;Í0U2a|Bg åã A±Ö AÆ·H>≥33 ?ì33A≤ı√13 00 27.17+27 54 53.29Ä   Ä ¿  Irr Simbad@hdëèŸ˝@;È¿ÎÌ˙DBg _   AÆı√ A™{?hı√ @ÖA¢=q13 00 34.25+27 54 47.15 ÛÁ S¿      Simbad@hd√Û‡7@<.±ƒ2 Bg  Wn A©Ö A§QÏ?œ\) @@  A•Ö13 00 35.74+28 03 19.44 ÔY [¿  E   Simbad@hd‘V.	ˇ@;Ì Ø¢ZBg `{ A¶=q A•\)>£◊ ?∞£◊A£◊
+13 00 36.22+27 55 34.60Ä   Ä ¿  Irr Simbad@heJb#·á@<ˆË)I•Bg ;°   ¿   AØÆ¿   @∏RA¨=q13 00 39.68+28 00 41.69 ä 8¿       Simbad@heLnmõÂ@<¡ Ê∞Bg ;.   A¥=q A≤  ?#◊
+ ?≈∏A§ı√13 00 39.74+28 01 11.89Ä   Ä ¿      Simbad@he•„S˜œ@<yR“4ÏBg <    A∞{ AÆz·?0£◊ ?¨ÃÕAÆı√13 00 42.36+28 02 41.35Ä   Ä ¿      Simbad@hf;˜'@<Ã¢€aªBg  *o   A≠∏ A¨ÃÕ>ôôö ?c◊
+A¨è\13 00 45.15+28 05 20.63Ä   Ä ¿       Simbad@h\>iÉQ@<Up
+Un 	ò   AÆz· A¨ÃÕ?5¬è @  A¶ÃÕ12 59 31.82+28 00 32.81 Yñ [¿      Simbad@h_Ç”Ñw@< ¿≠Ÿ©Un ≈È   A∞·H A∞{>≥33 ?ÅGÆA£p§12 59 53.19+28 00 10.57Ä   Ä ¿      Simbad@haN&‘Ä@<Èx‘˝ÙUn äL A®=q A®z·?z·H @ı√A£¬è13 00 09.79+28 01 37.19 Î≥ ?¿  E   Simbad@hbÿ¬§Tﬁ@<µ≤‘‘Un  Äé Aß
+= A©◊
+?+Ö ?Ä  A¿(ˆ13 00 21.35+28 03 26.87  æ [@lÃÕdE  Simbad@hcı◊à@<9’‰§Un b8 A©p§ A¨£◊?!GÆ ?u¬èAø3313 00 22.85+28 00 56.61  $8 Z@πôödE  Simbad@hd¢∆i}@<g†˘	lUn  V5 A≥
+= A≤  ?W
+= ?Ωp§A∏=q13 00 34.77+28 04 32.88Ä   Ä ¿  Sp  Simbad@heSP	,œ@<∂oì5“Un <.   AØ∏ A´p§>u¬è ?YôöA±
+=13 00 39.94+28 00 24.08Ä   Ä ¿      Simbad@hea¶Ec@<ÿD–Un  'È   A∞·H A≠GÆ>‹(ˆ ?ó
+=A´◊
+13 00 40.36+28 04 54.48Ä   Ä ¿       Simbad@h\]·\¶ @;˝õ=»KPM Ëe A∞   AΩ∏?:·H ?0£◊A∏∏R12 59 32.75+27 59 26.34Ä   Ä ¿  dE  Simbad@h_*ZFùs@;˘éuy)PM »‡ ¿   AµGÆ¿   ?O\)Aº{12 59 53.74+27 58 21.64Ä   Ä ¿  Sp   Simbad@h`Î1;‚.@<=öïBPM àD A±ôö Aº=q¿   ?QÎÖA¡\)13 00 06.89+28 01 55.89Ä   Ä ¿  dE  Simbad@haQ¨ö˛@;Òv›¨Ó·PM ±ì  AÆ(ˆ A±\)?5¬è ?
+=qA¬=q13 00 07.95+27 56 35.60Ä   Ä ¿  dE  Simbad@haí8\h@<∞5ΩQ/PM  u0  A∞ı√ A¨·H?:·H ?aGÆAø\)13 00 11.78+28 05 05.00Ä   Ä ¿  dE  Simbad@hb*ZFùs@;ÈàèÜaPM Ö_ A¨·H AΩ\)?333 ?YôöAµp§13 00 16.24+27 54 44.07Ä   Ä ¿  dE  Simbad@hbÜ`‘V@;˜ÅÉ˘dPM t A±\) A¥ı√?0£◊ ?W
+=A¿ı√13 00 18.93+27 58 00.55Ä   Ä ¿  dE  Simbad@hb≥Âu:?@<Ø¢ZqPM ëÂ AÆ·H A≥ÎÖ?J=q ?s33A√Ö13 00 20.27+28 02 02.15Ä   Ä ¿  dE  Simbad@hbÁ¿nπ@<BÑﬂŒPM  Ä A∞=q A¥ı√?E∏ ?®ı√Aµ◊
+13 00 21.79+28 04 41.48Ä   Ä ¿  cE  Simbad@hcHU⁄'(@<ŸUqKùPM  Oª  A≥ôö A±
+=>û∏R ?†  Aªp§13 00 24.62+28 03 42.86Ä   Ä ¿      Simbad@hdf∫I<ä@;˛›¨Ó‡ÙPM q  AÆÃÕ A±Ö?+Ö ?W
+=A¬ı√13 00 33.01+27 59 44.05Ä   Ä ¿      Simbad@h]nC™yº@;ÛhHæµ≥PB ¸∏ A≥¬è AÆè\¿   @[ÖA¨  12 59 40.73+27 57 02.92Ä   Ä ¿  E   Simbad@hbª¬πMî@;Û4Çæã¡PB wÅ A±\) A¨{?.{ ?Ô\)A∂=q13 00 20.50+27 57 00.08Ä   Ä ¿  Sp  Simbad@hcŒÖ3±@;˚≠“^›PB |A A±
+= AØp§¿   @^{A≥GÆ13 00 28.55+27 58 59.20Ä   Ä ¿  E   Simbad@he÷∂ZöÄ@;˚º+îŸ@PB Q!  A≤·H A≥Ö?+Ö ?\)Aø∏13 00 43.79+27 59 00.02Ä   Ä ¿      Simbad                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
